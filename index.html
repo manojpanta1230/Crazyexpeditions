@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Expeditions Nepal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+a{
+        z-index: 1;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1, header p, .btn {
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      background: #e67e22;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #d35400;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #e67e22;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Trek Cards */
+    .trek-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .trek-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+    }
+
+    .trek-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .trek-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .trek-card .info {
+      padding: 15px;
+    }
+
+    .trek-card h3 {
+      margin: 0 0 10px;
+      color: #e67e22;
+    }
+
+    .trek-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Extra Sections */
+    .reasons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .reason {
+      flex: 1 1 250px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .reason h3 {
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #333;
+      color: #ddd;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crazy Expeditions Nepal</h1>
+    <p>Explore the Himalayas • Discover Yourself</p>
+    <a href="#treks"><button class="btn">Start Trekking</button></a>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Crazy Expeditions Nepal, we guide you through breathtaking Himalayan landscapes.  
+      Whether you dream of Everest Base Camp, the Annapurna Circuit, or the Langtang Valley,  
+      our treks are designed to immerse you in Nepal’s beauty and culture.
+    </p>
+  </section>
+
+  <section id="treks">
+    <h2>Popular Trekking Places</h2>
+    <div class="trek-grid">
+      <div class="trek-card">
+        <img src="eVEREST.png" alt="Everest Base Camp">
+        <div class="info">
+          <h3>Everest Base Camp</h3>
+          <p>The world’s most iconic trek. Experience Sherpa villages, breathtaking peaks, and stand at the foot of Mt. Everest.</p>
+        </div>
+      </div>
+
+      <div class="trek-card">
+        <img src="Annapurna-Circuit-6-1600x1067.jpeg" alt="Annapurna Circuit">
+        <div class="info">
+          <h3>Annapurna Circuit</h3>
+          <p>A classic trek offering diverse scenery — lush valleys, mountain passes, and views of Annapurna and Dhaulagiri.</p>
+        </div>
+      </div>
+
+      <div class="trek-card">
+        <img src="lANGTAN.jpg" alt="Langtang Valley">
+        <div class="info">
+          <h3>Langtang Valley</h3>
+          <p>Close to Kathmandu yet rich in culture and mountain beauty. Known as the “Valley of Glaciers.”</p>
+        </div>
+      </div>
+
+      <div class="trek-card">
+        <img src="mansalu-round-trek.jpg" alt="Manaslu Circuit">
+        <div class="info">
+          <h3>Manaslu Circuit</h3>
+          <p>A remote and stunning trek around the world’s 8th highest mountain, blending adventure and cultural immersion.</p>
+        </div>
+      </div>
+
+      <div class="trek-card">
+        <img src="gokyo-lakes.jpeg" alt="Gokyo Lakes">
+        <div class="info">
+          <h3>Gokyo Lakes</h3>
+          <p>Pristine turquoise lakes at high altitude with majestic views of Everest and surrounding giants.</p>
+        </div>
+      </div>
+
+      <div class="trek-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Upper Mustang">
+        <div class="info">
+          <h3>Upper Mustang</h3>
+          <p>A unique desert-like landscape with Tibetan culture, ancient caves, and the walled city of Lo Manthang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="best-time">
+    <h2>Best Time to Visit</h2>
+    <p>
+      Nepal has two main trekking seasons:  
+      <br>🍂 <b>Autumn (September–November)</b>: Clear skies, best mountain views, moderate temperatures.  
+      <br>🌸 <b>Spring (March–May)</b>: Warm weather, rhododendron blooms, vibrant landscapes.  
+    </p>
+  </section>
+
+  <section id="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="reasons">
+      <div class="reason">
+        <h3>Expert Guides</h3>
+        <p>Our Sherpa and local guides have years of experience leading safe and memorable treks.</p>
+      </div>
+      <div class="reason">
+        <h3>Authentic Experience</h3>
+        <p>We focus on cultural immersion, local homestays, and off-the-beaten-path adventures.</p>
+      </div>
+      <div class="reason">
+        <h3>Sustainable Tourism</h3>
+        <p>We care for the environment and support local communities on every expedition.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Photo Highlights</h2>
+    <div class="gallery-grid">
+      <img src="Annapurna-Circuit-6-1600x1067.jpeg" alt="Mountain trail">
+      <img src="eVEREST.png" alt="Prayer flags">
+      <img src="lANGTAN.jpg" alt="Snowy peaks">
+      <img src="mansalu-round-trek.jpg" alt="Trekkers walking">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Ready to begin your trek of a lifetime? Get in touch with us to plan your adventure.  
+      📧 Email: <b>info@crazyexpeditions.com</b>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Crazy Expeditions Nepal. All Rights Reserved.
+  </footer>
+</body>
+</html>
